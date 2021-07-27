@@ -1,4 +1,5 @@
 package com.awa.data;
+
 /**
  * Implementation of the input data interface
  */
@@ -6,18 +7,22 @@ public class DataInputImpl implements DataInput {
     private long timestamp;
     private short inputValue;
 
+    @Override
     public long getTimestamp() {
         return timestamp;
     }
 
+    @Override
     public void setTimestamp(long timestamp) {
         this.timestamp = timestamp;
     }
 
+    @Override
     public short getInputValue() {
         return inputValue;
     }
 
+    @Override
     public void setInputValue(short inputValue) {
         this.inputValue = inputValue;
     }
